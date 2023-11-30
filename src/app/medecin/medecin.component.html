@@ -1,0 +1,36 @@
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card custom-card">
+        <div class="card-body">
+            <h4 class="card-title custom-card-title">Liste des medecins</h4>
+            <button routerLink="/Ajoutermed" class="btn btn-primary">Ajouter</button>
+            <div class="table-responsive custom-table pt-3">
+                <table class="table custom-table-bordered table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th class="custom-table-header">#</th>
+                            <th class="custom-table-header">Nom</th>
+                            <th class="custom-table-header">Spécialité</th>
+                            <th class="custom-table-header">Adresse</th>
+                            <th class="custom-table-header">Téléphone</th>
+                            <th class="custom-table-header"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let patient of patientDetails; let i = index">
+                            <td style="text-align: center;">{{ i + 1 }}</td>
+                            <td style="text-align: center;">{{ patient.medecinNom }}</td>
+                            <td style="text-align: center;">{{ patient.specialite }}</td>
+                            <td style="text-align: center;">{{ patient.adresseMedecin }}</td>
+                            <td style="text-align: center;">{{ patient.telephoneMedecin }}</td>
+                            <td> 
+                                <i routerLink="/Ajoutermed" class="fas fa-edit text-primary"></i>
+                                <i class="fas fa-trash text-danger"></i>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

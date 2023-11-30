@@ -1,0 +1,36 @@
+<div class="container-scroller">
+  <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row custom-navbar">
+  </nav>
+
+  <div class="container-fluid page-body-wrapper">
+    <nav class="sidebar sidebar-offcanvas custom-sidebar" id="sidebar">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" routerLink="/liste_information">
+            <i class="fas fa-home"></i>
+            <span class="menu-title custom-menu-title " style="margin-left: 15px;">home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" routerLink="/medecin">
+            <i class="fas fa-user-md"></i>
+            <span class="menu-title custom-menu-title" style="margin-left: 15px;">Medecin</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" routerLink="/suivi">
+            <i class="fas fa-chart-line"></i>
+            <span class="menu-title custom-menu-title" style="margin-left: 15px;">Suivi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" routerLink="/dossieradministratif">
+            <i class="fas fa-folder"></i>
+            <span class="menu-title custom-menu-title" style="margin-left: 15px;">Folder</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>

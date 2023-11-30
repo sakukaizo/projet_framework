@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="form-title">Ajouter un médecin</h1>
+  <form class="styled-form">
+    <div class="form-group">
+      <label for="medecinNom">Nom :</label>
+      <input type="text" id="medecinNom" name="medecinNom" [(ngModel)]="nouveauNom" placeholder="Entrez le nom du médecin" required>
+    </div>
+    <div class="form-group">
+      <label for="specialite">Spécialité :</label>
+      <input type="text" id="specialite" name="specialite" [(ngModel)]="nouvelleSpecialite" placeholder="Entrez la spécialité" required>
+    </div>
+    <div class="form-group">
+      <label for="adresseMedecin">Adresse :</label>
+      <input type="text" id="adresseMedecin" name="adresseMedecin" [(ngModel)]="nouvelleAdresse" placeholder="Entrez l'adresse" required>
+    </div>
+    <div class="form-group">
+      <label for="telephoneMedecin">Téléphone :</label>
+      <input type="tel" id="telephoneMedecin" name="telephoneMedecin" [(ngModel)]="nouveauTelephone" placeholder="Entrez le numéro de téléphone" required>
+    </div>
+    <div class="form-buttons">
+      <button type="submit" class="btn-submit">Soumettre</button>
+      <button type="button" class="btn-cancel" [routerLink]="'/medecin'">Annuler</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,18 @@
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.9); /* Blanc mat avec une opacité de 90% */
+  color: #fff; /* Texte en blanc */
+}
+
+.custom-nav-link {
+  color: #fff; /* Couleur de lien en blanc */
+}
+
+.custom-navbar-toggler,
+.custom-navbar-toggler-right {
+  color: #fff; /* Couleur des toggler en blanc */
+}
+
+.custom-page-body-wrapper {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond de la page en blanc mat avec une opacité de 90% */
+  color: #fff; /* Texte en blanc */
+}

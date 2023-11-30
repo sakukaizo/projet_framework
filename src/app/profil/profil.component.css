@@ -1,0 +1,63 @@
+.center {
+    margin-left: 500px;
+    margin-top: 100px;
+    width: 70%;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    /* Pour centrer horizontalement */
+    align-items: center;
+    /* Pour centrer verticalement */
+}
+
+.center1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #c7c0c0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.info-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.info-box label {
+    font-weight: bold;
+}
+
+.info-box a {
+    text-decoration: none;
+    color: #333;
+}
+
+.text-center {
+    display: flex;
+    align-items: center;
+}
+
+.text-center label {
+    margin-right: 20px;
+}
+
+.circular-image {
+    border-radius: 50%;
+    /* Rendre l'image circulaire */
+    width: 100px;
+    /* Ajuster la taille de l'image */
+    height: 100px;
+    /* Hauteur égale pour maintenir la forme circulaire */
+}

@@ -1,0 +1,155 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="form-title">Ajouter Patient</h1>  
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 my-4 d-flex flex-column justify-content-between" style="height: 140vh;">
+      <h3 text-center mb-4>Informations Patient</h3>
+      <form >
+        <div class="form-group">
+          <label for="nom">NOM :</label>
+          <input type="text" [(ngModel)]="nom" placeholder="Entrez votre nom" required name="nom">
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom :</label>
+          <input type="text" [(ngModel)]="prenom" placeholder="Entrez votre prénom" required name="prenom">
+        </div>
+        <div class="form-group">
+          <label for="dateNaissance">Date de naissance :</label>
+          <input type="date" [(ngModel)]="dateNaissance" required name="dateNaissance">
+        </div>
+        <div class="form-group">
+          <label for="adresse">Adresse :</label>
+          <input type="text" [(ngModel)]="adresse" placeholder="Entrez votre adresse" required name="adresse">
+        </div>
+        <div class="form-group">
+          <label for="tel1">Tél (1) :</label>
+          <input type="tel" [(ngModel)]="tel1" placeholder="Entrez votre numéro de téléphone" required name="tel1">
+        </div>
+        <div class="form-group">
+          <label for="tel2">Tél (2) :</label>
+          <input type="tel" [(ngModel)]="tel2" placeholder="Entrez votre deuxième numéro de téléphone">
+        </div>
+        <div class="form-group">
+          <label for="numSecuriteSociale">N° Sécurité Sociale :</label>
+          <input type="text" [(ngModel)]="numSecuriteSociale" placeholder="Entrez votre numéro de sécurité sociale" required name="numSecuriteSociale">
+        </div>
+        <div class="form-group">
+          <label for="caisse">Caisse :</label>
+          <input type="text" [(ngModel)]="caisse" placeholder="Entrez votre caisse" required name="caisse">
+        </div>
+        <div class="form-group">
+          <label for="taille">Taille :</label>
+          <input type="text" [(ngModel)]="taille" placeholder="Entrez votre taille" required name="taille">
+        </div>
+        <div class="form-group">
+          <label for="poids">Poids :</label>
+          <input type="text" [(ngModel)]="poids" placeholder="Entrez votre poids" required name="poids">
+        </div>
+        <div class="form-group">
+          <label for="profession">Profession :</label>
+          <input type="text" [(ngModel)]="profession" placeholder="Entrez votre profession" required name="profession">
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-3 my-4 d-flex flex-column justify-content-between" style="height: 50vh;">
+      <h3 text-center mb-4>Medecin Traitant</h3>
+      <form>
+        <div class="form-group">
+          <label for="medecinNom">Nom :</label>
+          <input type="text" [(ngModel)]="medecinNom" placeholder="Nom du médecin" required name="adresseMedecin">
+        </div>
+        <div class="form-group">
+          <label for="specialite">Spécialité :</label>
+          <input type="text" [(ngModel)]="specialite" placeholder="Spécialité du médecin" required name="specialite">
+      </div>
+      <div class="form-group">
+          <label for="adresseMedecin">Adresse :</label>
+          <input type="text" [(ngModel)]="adresseMedecin" placeholder="Adresse du médecin" required name="adresseMedecin">
+      </div>
+      <div class="form-group">
+          <label for="telephoneMedecin">Téléphone :</label>
+          <input type="tel" [(ngModel)]="telephoneMedecin" placeholder="Téléphone du médecin" required name="telephoneMedecin">
+      </div>
+      </form>
+    </div> 
+    <div class="col-md-3 my-4 d-flex flex-column justify-content-between" style="height: 90vh;">
+      <h3 text-center mb-4>Suivis</h3>
+      <form>
+        <div class="form-group">
+          <label for="dateEnregistrement">Date d’enregistrement polygraphique :</label>
+          <input type="date" [(ngModel)]="dateEnregistrement" required name="iah">
+        </div>
+        <div class="form-group">
+         <label for="iah">IAH :</label>
+         <input type="text" [(ngModel)]="iah" placeholder="Entrez l'IAH" required name="iah">
+        </div>
+        <div class="form-group">
+          <label for="dateInstallationCPAP">Date d’installation du CPAP :</label>
+          <input type="date" [(ngModel)]="dateInstallationCPAP" required name="dateInstallationCPAP">
+        </div>
+        <div class="form-group">
+          <label for="datesObservances7Jours">Dates d’observances pour 7 jours :</label>
+          <input type="text" [(ngModel)]="datesObservances7Jours" placeholder="Entrez les dates pour 7 jours">
+        </div>
+        <div class="form-group">
+           <label for="datesObservances1Mois">Dates d’observances pour 1 mois :</label>
+           <input type="text" [(ngModel)]="datesObservances1Mois" placeholder="Entrez les dates pour 1 mois">
+        </div>
+        <div class="form-group">
+         <label for="datesObservances2Mois">Dates d’observances pour 2 mois :</label>
+         <input type="text" [(ngModel)]="datesObservances2Mois" placeholder="Entrez les dates pour 2 mois">
+        </div>
+        <div class="form-group">
+         <label for="datesObservances3Mois">Dates d’observances pour 3 mois :</label>
+         <input type="text" [(ngModel)]="datesObservances3Mois" placeholder="Entrez les dates pour 3 mois">
+        </div>
+      </form>
+    </div> 
+  
+    <div class="col-md-3 my-4 d-flex flex-column justify-content-between" style="height: 140vh;">
+      <h3 class="text-center mb-4" >Dossier Administratif</h3>
+      <form class="mb-auto">
+        <div class="form-group">
+          <label for="accordCNAM">Accord CNAM :</label>
+          <input type="text" [(ngModel)]="accordCNAM" placeholder="Accord CNAM" required name="numBL">
+        </div>
+        <div class="form-group">
+          <label for="numBL">N° BL :</label>
+          <input type="text" [(ngModel)]="numBL" placeholder="N° BL" required name="numBL">
+        </div>
+        <div class="form-group">
+          <label for="dateBL">Date B.L :</label>
+          <input type="date" [(ngModel)]="dateBL" required name="dateBL">
+        </div>
+        <div class="form-group">
+          <label for="numFacture">N° Facture :</label>
+          <input type="text" [(ngModel)]="numFacture" placeholder="N° Facture" required name="numFacture">
+        </div>
+        <div class="form-group">
+          <label for="dateFacture">Date Facture :</label>
+          <input type="date" [(ngModel)]="dateFacture" required name="dateFacture">
+        </div>
+        <div class="form-group">
+          <label for="uploadFile">Télécharger un fichier :</label>
+          <input type="file"  accept=".pdf, .doc, .docx, image/*">
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+          <button class="btn btn-primary me-3" routerLink="/liste_information"><i></i>Retourner</button>
+          <button class="btn btn-success" (click)="onSubmit()"><i></i>Valider</button>
+        </div>
+        <div *ngIf="showValidationMessage" class="mt-3 alert alert-success">
+          Les données du patient ont été enregistrées avec succès.
+        </div>
+        
+      </form>
+   
+    </div>
+  </div>
+</div>
+  
